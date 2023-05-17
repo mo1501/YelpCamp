@@ -3,31 +3,35 @@
     <div class="row">
         <h1 class="text-center">New Campground</h1>
         <div class="col-6 offset-3">
-            <form action="/campgrounds" method="POST">
+            <form action="/campgrounds" method="POST" novalidate class="validated-form">
                 <div class="mb-3">
                     <label class="form-label" for="title">Title</label>
-                    <input class="form-control" type="text" id="title" name="campground[title]">
+                    <input class="form-control" type="text" id="title" name="campground[title]" required>
+                    <div class="valid-feedback">Valid content</div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="location">location</label>
-                    <input class="form-control" type="text" id="location" name="campground[location]">
+                    <input class="form-control" type="text" id="location" name="campground[location]" required>
+                    <div class="valid-feedback">Valid content</div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="imageUrl">Image Url</label>
-                    <input class="form-control" type="text" id="imageUrl" name="campground[image]">
+                    <input class="form-control" type="text" id="imageUrl" name="campground[image]" required>
+                    <div class="valid-feedback">Valid content</div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="price">Campground Price</label>
                     <div class="input-group">
                         <span class="input-group-text" id="price">$</span>
-                        <input type="text" class="form-control" placeholder="0.00" name="campground[price]">
+                        <input type="text" class="form-control" placeholder="0.00" name="campground[price]" required>
+                        <div class="valid-feedback">Valid content</div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="description">Description</label>
-                    <textarea id="description" cols="30" rows="5" class="form-control" type="text" id="description"
-                        name="campground[description]">
-                    </textarea>
+                    <textarea id="description" cols="30" rows="5" class="form-control" type="text"
+                        name="campground[description]" required></textarea>
+                    <div class="valid-feedback">Valid content</div>
                 </div>
                 <div class="mb-3">
                     <button class="btn btn-success">Add Campground</button>
@@ -36,3 +40,5 @@
             <a href="/campgrounds">All Campgrounds</a>
         </div>
     </div>
+
+    
