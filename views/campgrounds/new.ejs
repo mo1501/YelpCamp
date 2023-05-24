@@ -3,7 +3,7 @@
     <div class="row">
         <h1 class="text-center">New Campground</h1>
         <div class="col-6 offset-3">
-            <form action="/campgrounds" method="POST" novalidate class="validated-form">
+            <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label class="form-label" for="title">Title</label>
                     <input class="form-control" type="text" id="title" name="campground[title]" required>
@@ -14,11 +14,14 @@
                     <input class="form-control" type="text" id="location" name="campground[location]" required>
                     <div class="valid-feedback">Valid content</div>
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label class="form-label" for="imageUrl">Image Url</label>
                     <input class="form-control" type="text" id="imageUrl" name="campground[image]" required>
                     <div class="valid-feedback">Valid content</div>
-                </div>
+                </div> -->
+
+                <!-- <input type="file" name="image" id="" multiple> -->
+
                 <div class="mb-3">
                     <label class="form-label" for="price">Campground Price</label>
                     <div class="input-group">
@@ -34,11 +37,16 @@
                     <div class="valid-feedback">Valid content</div>
                 </div>
                 <div class="mb-3">
+                    <div class="custom-file">
+                        <label for="image" class="form-label">Upload Image(s)</label>
+                        <input class="form-control" type="file" id="image" name="image" multiple>
+                        <label for="image" class="custom-file-label text-muted"></label>
+                    </div>
+                </div>
+                <div class="mb-3">
                     <button class="btn btn-success">Add Campground</button>
                 </div>
             </form>
             <a href="/campgrounds">All Campgrounds</a>
         </div>
     </div>
-
-    
