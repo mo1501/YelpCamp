@@ -3,21 +3,21 @@
 YelpCamp is a web application for sharing and discovering campgrounds. Users can register, log in, add new campgrounds, view existing ones, and leave reviews.
 
 ![Screenshot 1](public/images/YelpCamp1.png)
-![Screenshot 2](public/images/YelpCamp2.png)
-![Screenshot 3](public/images/YelpCamp3.png)
-![Screenshot 3](public/images/YelpCamp4.png)
 
 ## Features
 
 - **User Authentication:**
   - Users can register and log in securely.
+![Screenshot 2](public/images/YelpCamp2.png)
 
 - **Campground Management:**
   - Users can add new campgrounds.
   - Users can view existing campgrounds.
+![Screenshot 3](public/images/YelpCamp3.png)
 
 - **Review System:**
   - Users can leave reviews for campgrounds.
+![Screenshot 3](public/images/YelpCamp4.png)
 
 ## Security Features
 
